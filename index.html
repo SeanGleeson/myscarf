@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Doctor Who Scarf Progress</title>
+		<meta name="description" content="A handy web app to caclulate how many rows you have knit on your Doctor Who scarf. It generates a neat image you can post to social media." />
+		<meta property="og:title" content="Doctor Who Scarf Progress" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.seangleeson.com/apps/myscarf/" />
+		<meta property="og:image" content="https://www.seangleeson.com/apps/myscarf/ogimg.png" />
+		<meta property="og:image:secure_url" content="https://www.seangleeson.com/apps/myscarf/ogimg.png" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="600" />
+		<meta property="og:image:height" content="400" />
+		<meta property="og:description" content="A handy web app to caclulate how many rows you have knit on your Doctor Who scarf. It generates a neat image you can post to social media." />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Doctor Who Scarf Progress" />
+		<meta name="keywords" content="4th fourth Doctor Who scarf Tom Baker science fiction fan scifi fandom cosplay BBC knitting pattern Acheson Hero app Sean Gleeson" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="shortcut icon" sizes="196x196" href="/apple-touch-icon-196.png" />
+		<link rel="shortcut icon" sizes="128x128" href="/apple-touch-icon.png" />
+		<link rel="shortcut icon" sizes="16x16" href="/favicon.ico" type="image/x-icon" />
+		<style type="text/css" media="all">
+			html, body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				background-color: #FFFFFF;
+			}
+			main {
+				margin: auto;
+				width: 100%;
+				height: calc(100% - 5px);
+				overflow: hidden;
+			}
+			@media (max-aspect-ratio: 0.75) {
+				main {
+					width: 600px;
+					height: 800px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+			contentScriptType="application/ecmascript" onload="this.StripePicker = new ScarfStripePicker(evt);" 
+			class="stripepicker" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 600 800">
+			<defs>
+				<script xlink:href="stripe_picker.js"></script>
+				<style type="text/css"><![CDATA[
+					@import url("stripe_picker.css");
+				]]></style>
+				<polygon id="indicator" points="-15,-25 0,-12 15,-25 0,15" />
+				<g id="scarf_stripes">
+					<rect x="0" class="purple" width="8" height="60" />
+					<rect x="6" class="camel" width="46" height="60" />
+					<rect x="50" class="bronze" width="16" height="60" />
+					<rect x="64" class="yellow" width="10" height="60" />
+					<rect x="72" class="rust" width="20" height="60" />
+					<rect x="90" class="purple" width="8" height="60" />
+					<rect x="96" class="gray" width="40" height="60" />
+					<rect x="134" class="moss" width="20" height="60" />
+					<rect x="152" class="yellow" width="8" height="60" />
+					<rect x="158" class="camel" width="28" height="60" />
+					<rect x="184" class="rust" width="16" height="60" />
+					<rect x="198" class="bronze" width="8" height="60" />
+					<rect x="204" class="purple" width="12" height="60" />
+					<rect x="214" class="moss" width="40" height="60" />
+					<rect x="252" class="yellow" width="10" height="60" />
+					<rect x="260" class="gray" width="18" height="60" />
+					<rect x="276" class="rust" width="10" height="60" />
+					<rect x="284" class="camel" width="48" height="60" />
+					<rect x="330" class="purple" width="10" height="60" />
+					<rect x="338" class="moss" width="20" height="60" />
+					<rect x="356" class="gray" width="14" height="60" />
+					<rect x="368" class="yellow" width="8" height="60" />
+					<rect x="374" class="rust" width="20" height="60" />
+					<rect x="392" class="purple" width="8" height="60" />
+					<rect x="398" class="bronze" width="36" height="60" />
+					<rect x="432" class="camel" width="12" height="60" />
+					<rect x="442" class="gray" width="8" height="60" />
+					<rect x="448" class="rust" width="40" height="60" />
+					<rect x="486" class="yellow" width="14" height="60" />
+					<rect x="498" class="moss" width="20" height="60" />
+					<rect x="516" class="purple" width="8" height="60" />
+					<rect x="522" class="camel" width="40" height="60" />
+					<rect x="560" class="bronze" width="12" height="60" />
+					<rect x="570" class="gray" width="20" height="60" />
+					<rect x="588" class="rust" width="8" height="60" />
+					<rect x="594" class="purple" width="14" height="60" />
+					<rect x="606" class="camel" width="8" height="60" />
+					<rect x="612" class="yellow" width="14" height="60" />
+					<rect x="624" class="moss" width="50" height="60" />
+					<rect x="672" class="rust" width="16" height="60" />
+					<rect x="686" class="gray" width="14" height="60" />
+					<rect x="698" class="yellow" width="10" height="60" />
+					<rect x="706" class="bronze" width="20" height="60" />
+					<rect x="724" class="purple" width="10" height="60" />
+					<rect x="732" class="camel" width="12" height="60" />
+					<rect x="742" class="gray" width="32" height="60" />
+					<rect x="772" class="rust" width="8" height="60" />
+					<rect x="778" class="yellow" width="14" height="60" />
+					<rect x="790" class="camel" width="16" height="60" />
+					<rect x="804" class="purple" width="8" height="60" />
+					<rect x="810" class="bronze" width="30" height="60" />
+					<rect x="838" class="rust" width="8" height="60" />
+					<rect x="844" class="purple" width="30" height="60" />
+				</g>
+			</defs>
+			<rect class="bg" width="600" height="800" />
+			<g class="dial" transform="matrix(1, 0, 0, 1, 0, 413)">
+				<use xlink:href="#scarf_stripes" transform="matrix(0, 6, -6, 0, 480, -2280)" />
+				<line stroke-width="1" x1="50" x2="550" />
+				<use xlink:href="#indicator" transform="matrix(0, -0.6178, 0.6178, 0, 50, 0)" />
+				<use xlink:href="#indicator" transform="matrix(0, 0.6178, -0.6178, 0, 550, 0)" />
+				<rect class="hitarea" x="0" y="-29.5" width="100" height="59" transform="matrix(6, 0, 0, 6, 0, 0)" />
+			</g>
+			<g class="meter" transform="matrix(0.6178, 0, 0, 0.6178, 30, 152)">
+				<rect class="bg" x="-49" y="-120" width="972" height="240" />
+				<line class="divider unshrink" x1="-49" y1="120" x2="923" y2="120" />
+				<text class="unshrink" x="437" y="-60">Which stripe are you on?</text>
+				<use xlink:href="#scarf_stripes" />
+				<g class="pointer" transform="matrix(1, 0, 0, 1, 380, 0)">
+					<line y1="-10" y2="70" stroke-width="1.5" />
+					<use xlink:href="#indicator" transform="matrix(1, 0, 0, 1, 0, -20)" />
+					<use xlink:href="#indicator" transform="matrix(-1, 0, 0, -1, 0, 82)" />
+				</g>
+				<rect class="hitarea" x="-49" y="-50" width="972" height="160" />
+			</g>
+			<g class="footer" transform="matrix(1, 0, 0, 1, 0, 600)">
+				<rect class="bg" width="600" height="200" />
+				<line class="divider" x1="0" y1="0" x2="600" y2="0" />
+				<text x="250" y="40">And how many garter ridges</text>
+				<text x="250" y="66">have you knit on that stripe?</text>
+				<text class="giant ridges" x="470" y="66">0</text>
+				<g class="button white">
+					<rect x="30" y="90" width="540" height="80" />
+					<text class="rows" x="250" y="140">You&#x2019;ve knit 0 rows.</text>
+					<text class="giant" x="470" y="150">&gt;</text>
+				</g>
+				<rect class="hitarea" x="20" y="80" width="560" height="100" />
+			</g>
+			<g class="header" transform="matrix(1, 0, 0, 1, 0, 0)">
+				<rect class="black" x="0" y="0" width="600" height="80" />
+				<text class="camel" x="300" y="60">DOCTOR WHO SCARF PROGRESS</text>
+			</g>
+			<g class="popup">
+				<rect class="overlay" x="0" y="0" width="100%" height="100%" />
+				<rect class="mortise" x="50" y="100" width="500" height="640" />
+				<g class="closer">
+					<circle class="bg" cx="550" cy="100" r="30" />
+					<line x1="535" y1="85" x2="565" y2="115" />
+					<line x1="535" y1="115" x2="565" y2="85" />
+					<circle class="hit" cx="550" cy="100" r="30" />
+				</g>
+				<foreignObject x="80" y="120" width="440" height="580">
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<p>You have knit <b>0</b> rows.</p>
+						<p>You are <b>0%</b> finished knitting your scarf.</p>
+						<p>Here is a scarf progress image you can post to social media:</p>
+						<p><a href="https://www.seangleeson.com/apps/myscarf/img/blank.jpg" 
+							 target="_top"><img alt="204 rows" width="400" height="400" 
+							 src="https://www.seangleeson.com/apps/myscarf/img/blank.jpg" /></a></p>
+					</div>
+				</foreignObject>
+			</g>
+		</svg>
+		</main>
+	</body>
+</html>

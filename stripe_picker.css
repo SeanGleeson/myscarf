@@ -1,0 +1,98 @@
+text {
+	text-anchor: middle;
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	fill: hsl(43, 0%, 0%);
+}
+.header text {
+	font-size: 24px;
+	fill: hsl(43, 41%, 71%);
+}
+text.giant {font-size: 60px;}
+text.unshrink {font-size: 42px;}
+div {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #000000;
+}
+p {
+	margin: 10px 0px;
+}
+img {
+	border: 4px solid #000000;
+	width: calc(100% - 8px);
+	height: auto;
+}
+
+line {
+	fill: none;
+	stroke: hsl(43, 0%, 0%);
+}
+line.divider {stroke-width: 4px;}
+line.divider.unshrink {stroke-width: 6px;}
+
+.bg {fill: #E7E7E7;}
+.black {fill: hsl(43, 0%, 0%);}
+.bronze {fill: hsl(31, 61%, 41%);}
+.camel {fill: hsl(43, 41%, 71%);}
+.gray {fill: hsl(35, 9%, 49%);}
+.moss {fill: hsl(49, 49%, 34%);}
+.purple {fill: hsl(313, 58%, 28%);}
+.rust {fill: hsl(7, 71%, 51%);}
+.white {fill: hsl(43, 0%, 100%);}
+.yellow {fill: hsl(42, 81%, 52%);}
+
+.button.bronze text {fill: hsl(43, 0%, 100%);}
+.button.camel text {fill: hsl(43, 0%, 0%);}
+.button.gray text {fill: hsl(43, 0%, 100%);}
+.button.moss text {fill: hsl(43, 0%, 100%);}
+.button.purple text {fill: hsl(43, 0%, 100%);}
+.button.rust text {fill: hsl(43, 0%, 100%);}
+.button.white text {fill: hsl(43, 0%, 0%);}
+.button.yellow text {fill: hsl(43, 0%, 0%);}
+
+.hitarea {
+	fill: hsla(42, 81%, 52%, 0);
+	cursor: pointer;
+}
+
+.popup {
+	display: none;
+}
+.popup.popped {
+	display: inline;
+}
+.popup .overlay {
+	fill: rgba(0, 0, 0, 0.3);
+}
+.popup .mortise {
+	fill: #FFFFFF;
+	stroke: #000000;
+	stroke-width: 4px;	
+}
+.popup .closer line {
+	fill: none;
+	stroke: #000000;
+	stroke-width: 3px;
+}
+.popup .closer .hit {
+	fill: rgba(255, 201, 0, 0);
+	stroke: #000000;
+	stroke-width: 4px;
+	cursor: pointer;
+}
+.popup .closer .bg {
+	fill: #FFFFFF;
+}
+.popup .closer:hover .bg {
+	fill: hsl(34, 100%, 80%);
+}
+
+
+
